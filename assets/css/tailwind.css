@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg_img {
+  background-image: url('assets/img/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: 90% -35%;
+}
+
+#cta {
+  background-image: url('assets/img/bg-simplify-section-desktop.svg');
+  background-repeat: no-repeat;
+}
+
+@media(max-width: 700px){
+  .bg_img {
+    background-size: 500px;
+    background-position: 10% -10%;
+  }
+
+  #cta {
+    background-image: url('assets/img/bg-simplify-section-mobile.svg');
+  }
+}
+
+.svg_a_tag {
+  @apply mb-2 ml-4 text-gray-600 px-1 py-1 text-center border border-gray-300 ;
+}
+.svg_a_tag:hover {
+  @apply border-blue-400 text-blue-400 ;
+}
+.router-link-exact-active{
+  @apply text-darkGrayishBlue cursor-not-allowed ;
+}
